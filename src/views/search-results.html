@@ -1,0 +1,45 @@
+{% extends "parts/layout.html" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/search-results.css">
+{% endblock styles %}
+
+{% block title %}
+    <title>Resultados da busca</title>
+{% endblock title %}
+
+{% set pageId = "page-search-results" %}
+
+{% block content %}
+    {% include "parts/page-header.html" %}
+
+   
+
+        {% if total>0 %}
+        <h4><strong>{{total}} pontos</strong>
+            encontrados</h4> 
+      
+     <main>
+         {% for place in places %}
+         
+        <div class="cards">
+            <img src="{{ place.image }}" alt="Imagem de {{ place.name }}">
+            <h1>{{ place.name }}</h1>
+            <h3>{{ place.items }}</h3>
+            <p>
+                {{ place.city }}, {{ place.state }}
+                <br>
+                {{ place.adress }}
+                <br>
+                {{ place.adress2 }}
+            </p>
+        </div>
+
+        {% endfor %}
+        
+    </main>
+           
+        {% else %}
+            <h4><strong>Nenhum local encontrado.</strong></h4>
+    {% endif %}
+{% endblock content %}

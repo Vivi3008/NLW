@@ -1,0 +1,138 @@
+@media (max-width:920px){
+    #page-home{
+        background-position-x: 70vw;
+    }
+
+    #page-home .content{
+        align-items: center;
+        text-align: center;
+    }
+
+    a#add{
+        position: absolute;
+        bottom: 20px;
+
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #page-home main{
+        align-items: center;
+    }
+
+    #page-home main h1{
+        font-size: 34px;
+    }
+
+    #page-home main p{
+        font-size: 18px;
+        line-height: 28px;
+        margin-top: 14px;
+    }
+/*pagina search reusults*/
+    #page-search-results main{
+        grid-template-columns: 1fr;
+        margin: 38px;
+        gap: 18px;
+        
+    }
+    #page-search-results main .cards{
+        margin-bottom: 30px;
+    }
+
+    #page-search-results main .cards h1{
+        margin-top: 18px;
+        font-size: 26px;
+        line-height: 31px;
+        color: #322153;
+    }
+    #page-search-results main .cards h3{
+        margin: 20px 0;
+        font-family: Roboto, sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 28px;
+        color:var(--primary-color);
+    }
+    #page-search-results main .cards p{
+        margin-top: 18px;
+        font-size: 16px;
+        line-height: 24px;
+        color: #6c6c80;
+    }
+    
+}
+
+@media (min-width:1700px){
+    #page-home{
+        background-position-x: 40vw;
+    }
+}
+
+@media (max-height:760px){
+    #page-home{
+        background-position-y: 200px;
+    }
+ 
+}
+
+/* pagina create-point */
+@media (max-width:760px){
+     
+     #page-create-point form h1{
+        font-size: 20px;
+    }
+
+    form legend h2{
+        font-size: 14px;
+    }
+    
+    form legend span{
+        font-size: 12px;
+    }
+
+    form{
+        margin: 60px auto;
+        padding: 24px;
+    
+        max-width: 530px;
+    }
+
+    form fieldset{
+        margin-top: 24px;
+    }
+
+    form .field-group{
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.items-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+    }
+    div.items-grid li{
+        height: 150px;
+        padding: 23px;
+    }
+    form button{
+        width: 160px;
+        height: 46px;
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width:320px){
+    form{
+        margin: 60px auto;
+        padding: 24px;
+    
+        max-width: 530px;
+    }
+
+    form fieldset{
+        margin-top: 34px;
+    }
+}
